@@ -1,6 +1,6 @@
 from typing import Tuple, Dict
 import boto3
-from botocore.exceptions import ClientError, KeyError
+from botocore.exceptions import ClientError
 import json
 
 
