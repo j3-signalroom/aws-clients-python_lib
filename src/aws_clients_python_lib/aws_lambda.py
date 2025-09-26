@@ -1,6 +1,5 @@
 from typing import Dict
 import json
-from cc_clients_python_lib.http_status import HttpStatus
 
 
 __copyright__  = "Copyright (c) 2025 Jeffrey Jonathan Jennings"
@@ -21,7 +20,7 @@ def aws_lambda_function_return_json_object(logger, status_code: int, body: str) 
     Returns:
         str:  The AWS Lambda Function JSON object.
     """
-    if status_code == HttpStatus.OK:
+    if status_code == 200:
         logger.info(body)
         key = "message"
     else:
